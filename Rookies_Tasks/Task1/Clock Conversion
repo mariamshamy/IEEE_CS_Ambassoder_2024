@@ -1,19 +1,18 @@
 package javaapplication34;
 import java.util.Scanner;
- 
 public class JavaApplication34 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         in.nextLine();
- 
+
         for (int i = 0; i < n; i++) {
             String s = in.nextLine();
             String[] parts = s.split(":");
             int hour = Integer.parseInt(parts[0]);
             int min = Integer.parseInt(parts[1]);
             String ampm = "AM";
- 
+
             if (hour == 0) {
                 hour = 12;
             } else if (hour > 12) {
