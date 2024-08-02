@@ -1,0 +1,19 @@
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+      int n= nums.length;
+      int indx1=-1;
+      int indx2=-1;
+      for (int i = 0; i <n; i++) {
+        if(nums[i]==target){
+        indx1=i;
+        break;}
+        }
+      for (int i = 0; i <n; i++) {
+        if(nums[i]==target){
+        indx2=i;}
+        }
+      int sol[]={indx1,indx2};
+      return sol;
+ 
+ }
+}
