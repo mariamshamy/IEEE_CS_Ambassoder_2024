@@ -18,7 +18,7 @@ public class CookingTime {
                 int k2 = in.nextInt();
                 if (!kSet.contains(k2)) {
                     count++;
-                    kSet.remove(kSet.iterator().next()); // remove the oldest element
+                    kSet.remove(kSet.iterator().next());
                     kSet.add(k2);
                 }
             }
