@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+public class AsphaltingRoads {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n= scanner.nextInt();
+        boolean[] row = new boolean[n+1];
+        boolean[] col = new boolean[n+1];
+        for (int i=1; i <=n*n; i++) {
+            int x = scanner.nextInt();
+            int y = scanner.nextInt();
+            if (!row[x] && !col[y]) {
+                row[x] = true;
+                col[y] = true;
+                 System.out.print(i + " ");
+            }
+        }
+    }
+}
