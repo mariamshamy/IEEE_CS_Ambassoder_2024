@@ -1,0 +1,23 @@
+//package bashgold;
+import java.util.Scanner;
+public class Bashgold {
+    public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+     int n = in.nextInt();
+     int count = n/2;
+     System.out.println(count);   
+     if (n % 2 == 0){   
+        while(n>0){             
+        System.out.print("2 ");
+        n =n-2;
+        }
+     }
+     else {       
+        while(n!=3) {
+        System.out.print("2 ");    
+        n =n-2;
+        }
+        System.out.print("3 ");  
+    }        
+    }    
+}
