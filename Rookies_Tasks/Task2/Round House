@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class RoundHouse {
+    public static void main(String[] args) {
+       Scanner in = new Scanner(System.in);
+       int n = in.nextInt();
+       int entr = in.nextInt();
+       int leng = in.nextInt();
+       int res = (entr + leng) % n;
+       if (res == 0){
+           res = n;}
+       else if (res < 0){
+            res = (res + n) % n;
+            if (res == 0){
+                res = n;}
+        }
+        System.out.println(res);
+    }
+}
