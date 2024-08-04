@@ -1,0 +1,28 @@
+//package cooking.time;
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class CookingTime {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int T = in.nextInt();
+        while (T-- > 0) {
+            int n = in.nextInt();
+            int k = in.nextInt();
+            HashSet<Integer> kSet = new HashSet<>();
+            for (int i = 0; i < k; i++) {
+                kSet.add(in.nextInt());
+            }
+            int count = k;
+            for (int i = 0; i < n - k; i++) {
+                int k2 = in.nextInt();
+                if (!kSet.contains(k2)) {
+                    count++;
+                    kSet.remove(kSet.iterator().next()); // remove the oldest element
+                    kSet.add(k2);
+                }
+            }
+            System.out.println(count);
+        }
+    }
+}
