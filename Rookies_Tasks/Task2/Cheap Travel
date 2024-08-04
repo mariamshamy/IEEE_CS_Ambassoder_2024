@@ -1,0 +1,18 @@
+//package cheap.travel;
+import java.util.Scanner;
+public class CheapTravel {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int m = in.nextInt();
+        int a = in.nextInt();
+        int b = in.nextInt();
+        
+        int cost =0;
+        int cost1=n*a;
+        int cost2=((n/m))*b+ Math.min((n%m)*a, b);
+        cost= Math.min(cost1, cost2);
+        
+        System.out.println(cost);
+    }
+}
