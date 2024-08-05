@@ -1,0 +1,28 @@
+//package pangram;
+import java.util.Scanner;
+public class Pangram {
+    public static void main(String[] args) {
+     Scanner in = new Scanner(System.in);
+     int n= in.nextInt();
+     String s= in.next();
+     s=s.toLowerCase().replaceAll("[^a-z]","");
+     boolean[]found=new boolean[26];
+     if(n<26){
+         System.out.println("NO");}
+     else{ 
+         boolean b=false;
+        for (int i = 0; i < n; i++) {
+         found[s.charAt(i)-'a']=true;    
+        }
+     for(int i=0;i<26;i++){
+       if(!found[i]){
+         System.out.println("NO");
+         b=true;
+         break;
+       }  
+     }  
+       if(!b)
+       System.out.println("YES");
+    } 
+   }
+}
