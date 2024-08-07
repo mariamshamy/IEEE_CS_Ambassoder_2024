@@ -1,0 +1,35 @@
+//package task3;
+import java.util.Scanner;
+public class Task3 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int before[]=new int[n];
+        int after[]=new int[n];
+        boolean rated=false;
+        boolean unrated=false;
+        
+        for (int i = 0; i < n; i++) {
+        before[i]=in.nextInt();
+        after[i]=in.nextInt();                
+        }
+        
+        for (int i = 0; i <n; i++) {
+         if(before[i]!=after[i]){
+          rated=true;
+          break;}
+        }
+        for (int i = 0; i < n-1; i++) {
+          if(before[i]<before[i+1]){
+             unrated=true;
+             break;
+          } 
+         }
+        if(rated)
+        System.out.println("rated");
+        else if(unrated)
+        System.out.println("unrated");
+        else 
+        System.out.println("maybe");
+    }  
+}
