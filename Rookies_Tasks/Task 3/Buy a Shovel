@@ -1,0 +1,19 @@
+//package task3;
+import java.util.Scanner;
+public class Task3 {
+    public static void main(String[] args) {
+        Scanner in =new Scanner(System.in);
+        int cost1=in.nextInt();
+        int r=in.nextInt();
+        int count=0;
+        int cost=0;
+        while(true){
+        count++;
+        cost=count*cost1;
+         if(cost%10==0 || cost%10==r)
+           break;  
+        }
+        System.out.println(count);       
+    }
+    
+}
