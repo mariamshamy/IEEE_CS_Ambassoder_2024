@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>My Page</title>
+    </head>
+    <body>
+        <form method="get">
+            <div>
+                <input type="hidden" name="Token" value="b92f1fc2fce391ad7af633723afd3055">
+            </div>
+            <div>
+                <label>Email</label> <br>
+                <input type="email" name="Email" readonly value="o@o.com" required placeholder="Enter Your email">
+            </div>
+            <hr>
+            <div>
+                <label>Username</label> <br>
+                <input type="text" name="Username" autofocus minlength="5" maxlength="20" > 
+            </div>
+            <hr>
+            <input type="reset" value="Empty">
+            <br>
+            <br>
+            <input type="submit" value="Send">
+            <div>
+                <input id="Planning" type="checkbox" name="skills" value="Planning" checked>
+                <label for="Planning">Planning</label>
+            </div>
+            <br>
+            <div>
+                <input id="Analysis" type="checkbox" name="skills" value="Analysis" >
+                <label for="Analysis">Analysis</label>
+            </div>
+            <br>
+            <div>
+                <input id="Advanced Search" type="checkbox" name="skills" value="Advanced Search">
+                <label for="Advanced Search">Advanced Search</label>
+            </div>
+            <br>
+            <div>
+                <input id="Logical Thinking" type="checkbox" name="skills" value="Logical Thinking">
+                <label for="Logical Thinking">Logical Thinking</label>
+            </div>
+            <br>
+            <div>
+                <input id="Problem Solving" type="checkbox" name="skills" value="Problem Solving" checked>
+                <label for="Problem Solving">Problem Solving</label>
+            </div>
+            <br>
+
+
+            <div>
+                <input id="Scrum Master" type="radio" name="job" value="Scrum Master" >
+                <label for="Scrum Master">Scrum Master</label>
+            </div>
+            <br>
+            <div>
+                <input id="Project Manager" type="radio" name="job" value="Project Manager" >
+                <label for="Project Manager">Project Manager</label>
+            </div>
+            <br>
+            <div>
+                <input id="Business Analyst" type="radio" name="job" value="Business Analyst" >
+                <label for="Business Analyst">Business Analyst</label>
+            </div>
+            <br>
+            <div>
+                <input id="Back-End Developer" type="radio" name="job" value="Back-End Developer">
+                <label for="Back-End Developer">Back-End Developer</label>
+            </div>
+            <br>
+            <div>
+                <input id="Front-End Developer" type="radio" name="job" value="Front-End Developer">
+                <label for="Front-End Developer">Front-End Developer</label>
+            </div>
+            <hr>
+
+          
+            <!--aassignment 3-->
+                <label for="lang">Choose Book: </label>
+                <select name="lang" id="lang">
+                    <optgroup label="PHP">
+                        <option value="5" selected>v5.0</option>
+                        <option value="7">v7.0</option>
+                        <option value="8">v8.0</option>
+                    </optgroup>
+                    <optgroup label="Python">
+                        <option value="2">v2.0</option>
+                        <option value="3">v3.0</option>
+                        <option value="3.9">v3.9</option>
+                    </optgroup>
+                </select>
+                <hr>
+                <textarea name="brief" cols="80" rows="20" placeholder="Write Here Why You Want To Learn Programming"></textarea>
+        </form>
+    </body>
+</html>
