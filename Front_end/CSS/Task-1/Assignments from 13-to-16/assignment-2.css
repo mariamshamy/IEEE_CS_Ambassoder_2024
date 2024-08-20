@@ -1,0 +1,11 @@
+div.assign-2 {
+    width: fit-content;
+    max-width: 400px;
+    max-height: 40px;
+    background-color: #a52a2a;
+    padding: 10px;
+    margin: 15px;
+    color: white;
+    display: block;
+    overflow: hidden;
+}
