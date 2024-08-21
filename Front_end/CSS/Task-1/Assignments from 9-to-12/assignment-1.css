@@ -1,32 +1,28 @@
 .assign-1-shape-1 {
-    display: inline-block;
-    border: 5px solid red;
-    outline: 5px solid black;
     background-color: gainsboro;
-    margin: 20px;
-    padding: 40px;
+    outline:5px solid black;
+    border:5px solid red ;
+    margin: 15px;
+    padding: 30px;
+    display: inline-block;
 }
-.assign-1-shape-2 {
-    display: inline-block;
-    border: 5px solid;
-    border-bottom-color: blue;
-    border-top-color: blue;
-    border-left-color: green;
-    border-right-color: green;
-    outline: 5px solid black;
+
+.assign-1-shape-2{
     background-color: gainsboro;
-    margin: 20px;
-    padding: 40px;
+    outline:5px solid black ;
+    border: 5px solid ;
+    border-color: blue green;
+    margin: 15px;
+    padding: 30px;
+    display: inline-block;
 }
-.assign-1-shape-3 {
-    display: inline-block;
-    border: 5px dashed;
-    border-top-color: red;
-    border-bottom-color: blue;
-    border-left-color: yellow;
-    border-right-color: green;
-    outline: 5px solid black;
+
+.assign-1-shape-3{
     background-color: gainsboro;
-    margin: 20px;
-    padding: 40px;
+    outline:5px solid black ;
+    border: 5px dashed ;
+    border-color: red green blue yellow;
+    margin: 15px;
+    padding: 30px;
+    display: inline-block;
 }
