@@ -1,8 +1,8 @@
 .element-1 {
     width: 400px;
     height: 20px;
-    outline: 5px solid gainsboro ;
-    background-color: gainsboro;
+    outline: 5px solid #EEE ;
+    background-color: #EEE;
     border-left: 5px solid #e91e63;
     padding: 5px;
     margin: 30px;
@@ -10,8 +10,8 @@
 .element-2 {
     width: 400px;
     height: 20px;
-    outline: 5px solid gainsboro ;
-    background-color: gainsboro;
+    outline: 5px solid #EEE ;
+    background-color:#EEE;
     border-left: 5px solid #e91e63;
     padding: 5px;
     margin: 30px;
@@ -20,8 +20,8 @@
 .element-3 {
     width: 400px;
     height: 20px;
-    outline: 5px solid gainsboro ;
-    background-color: gainsboro;
+    outline: 5px solid #EEE ;
+    background-color: #EEE;
     border-left: 5px solid #009688;
     padding: 5px;
     margin: 30px;
