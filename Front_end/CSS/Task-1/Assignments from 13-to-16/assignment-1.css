@@ -1,11 +1,10 @@
-.parent .child .title {
+div .child .title{
     color: red;
 }
-
-.parent span {
+div .title{
     color: blue;
 }
-
-div p , div.title   {
+div p,
+.title{
     color: green;
 }
