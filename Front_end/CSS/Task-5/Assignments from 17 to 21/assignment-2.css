@@ -1,0 +1,14 @@
+.one{
+    text-transform: uppercase;
+    text-indent: 100px;
+}
+
+.two{
+    text-transform: capitalize;
+    text-indent: 110px;
+}
+
+.three{
+    text-transform: lowercase;
+    text-indent: 115px;
+}
