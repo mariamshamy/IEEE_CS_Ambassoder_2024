@@ -8,7 +8,7 @@ div {
     color: black;
   }
   .one{
-    visibility: .1;
+    background-color: rgb(179, 179, 179 , .1);
   }
   .two{
     opacity: .1;
