@@ -1,0 +1,21 @@
+div{
+  background-color: rgb(212, 211, 211);
+  padding: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div::first-letter{ 
+  visibility: hidden;
+}
+div::after{
+  content: "1";
+  background-color: rgb(250, 5, 5);
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  padding: 10px;
+  color: white;
+}
