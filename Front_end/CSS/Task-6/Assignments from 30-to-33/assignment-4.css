@@ -25,3 +25,9 @@ table thead td{
   border: 1px solid rgb(236, 31, 102);
   color: white;
 }
+
+caption{
+  margin: 10px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
