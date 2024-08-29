@@ -1,0 +1,14 @@
+div{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px auto;
+  background-color: #eee;
+  box-shadow:10px 0px 0px rgb(251, 88, 40) , -10px 0px 0px rgb(8, 173, 244) ;
+  color:rgb(251, 88, 40) ;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
