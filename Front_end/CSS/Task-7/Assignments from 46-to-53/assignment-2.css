@@ -1,0 +1,23 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.parent{
+  background-color:#eee;
+  width: 600px;
+  height: 400px;
+  padding: 10px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.parent div {
+  background-color: #f00;
+  color: white;
+  width: calc(94%/3);
+  text-align: center;
+  padding: 10px;
+  margin:1%;
+}
