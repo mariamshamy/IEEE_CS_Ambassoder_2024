@@ -1,0 +1,272 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+:root{
+    --main-color:#076dde;
+    --darker-blue: #00438a;
+    --text-color:#706e76;
+    --back-color:#eeeeee;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,.8),rgba(4,9,30,.8)),url(../landing.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-size: 100% 100%;
+}
+
+nav{
+    display: flex;
+    padding: .5% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+.ieee{
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--main-color);
+    text-decoration: none;
+} 
+.nav-links{
+   flex: 1;
+   text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    padding: 0px 10px;
+    display: inline-block;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-links ul li a.home {
+    color: var(--main-color);
+}
+.nav-links ul li a:hover{
+    color: var(--main-color);
+    
+}
+.welcome-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0px auto;
+    transform: translate(-50%,-50%);
+    color: var(--main-color);
+    text-align: center;
+    width: fit-content;
+}
+.welcome-text h1{
+    font-size: 40px;
+    background-image: linear-gradient(90deg,#2732c3 40%, #0b66db 100%);
+    background-clip: text;
+    color: transparent;
+    line-height: 1;
+}
+.welcome-text p{
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    width: 400px;
+}
+
+/********************************plane****************************************/
+.plane .contianer{
+    margin: 0px 200px;
+}
+.plane{
+    text-align: center;
+}
+.plane h3{
+    margin: 20px auto;
+}
+.plane p{
+    color: var(--text-color);
+}
+.plane .top ,.bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.plane .top div{
+    width: 330px;
+    align-content: center;
+    padding: 20px 0px;
+}
+.plane .top i{
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border-radius: 50px;
+    font-size: 60px;
+    align-content: center;
+}
+.plane .bottom h3{
+    color: var(--main-color);
+    font-size: 30px;
+    margin: 20px 0px;
+}
+.plane .bottom h4{
+    padding-bottom: 20px;
+}
+.plane .bottom div{
+    box-shadow: 0px 0px 10px 8px var(--back-color);
+    width: 250px;
+    align-content: center;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+.bottom hr{
+    color: var(--text-color);
+}
+i{
+    color: var(--main-color);
+}
+.plane button{
+    text-decoration: none;
+    padding: 5px 25px;
+    border:3px solid var(--main-color);
+    border-radius: 30px;
+    background-color: transparent;
+    color:#a4a4a4 ;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: .5s;
+}
+.plane button:hover{
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 35px;
+}
+.plane .bottom div ul{
+    list-style: none;
+    padding: 20px;
+    color: #a4a4a4;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-content: center;
+    justify-content: center;
+    font-size: small
+}
+.bottom li{
+    padding: 5px;
+}
+.bottom li i{
+    padding: 7px;
+}
+
+/************************************skills*****************/
+.skills h2,p{
+    text-align: center;
+}
+.skills p{
+    color: var(--text-color);
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 0 20px;
+}
+.skills .contianer{
+    width: 70%;
+    margin: 0px 200px;
+}
+.skills .name{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.skills .back{
+     height: 40px;
+     width: auto;
+     background-color: var(--back-color);
+     border-radius: 20px;
+}
+.skills .per{
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    position: relative;
+}
+.skills .per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 5px;
+    background-color: var(--darker-blue);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: -63px;
+    right: 0px;
+    transform: translateX(50%);
+    text-align: center;
+    align-content: center;
+}
+.per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--darker-blue);
+    top: -20px;
+    right: 0px;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+/*******************************************footer*************/
+.footer{
+	background-color: var(--back-color);
+}
+.footer-col{
+   width:calc(100%/3);
+   padding: 20px 0px;
+}
+.row{
+	display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: space-around;
+}
+footer ul{
+	list-style: none;
+}
+.footer-col ul li{
+	color: var(--main-color);
+	text-decoration: none;
+	font-weight: 400;
+	display: block;
+	transition: .3s;
+    font-size: 18px;
+    padding: 4px;
+}
+.footer-col ul li:hover{
+	color: var(--darker-blue);
+}
+.footer-col .social-links a{
+	display: inline-block;
+	text-align: center;
+	color: var(--main-color);
+    font-size: 30px;
+	transition: 0.3s;
+    margin: 10px 5px;
+}
+.footer-col .social-links a i:hover{
+	color:var(--darker-blue) ;
+}
